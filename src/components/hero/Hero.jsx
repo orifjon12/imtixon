@@ -17,23 +17,32 @@ function Hero() {
             </button>
           </div>
 
-          <img src="/images/xbox.png" alt="xbox" />
           <h4>₹299</h4>
+
+          <img src="/images/xbox.png" alt="xbox" />
         </div>
 
         <div className="hero-side">
           <div className="hero-dark">
-            <h5>SUMMER SALES</h5>
-            <h3>New Google Pixel 6 Pro</h3>
-            <button>
-              SHOP NOW <FaArrowRight />
-            </button>
+            <div className="hero-dark-info">
+              <div className="hero-dark-top">
+                <h5>SUMMER SALES</h5>
+                <h4>29% OFF</h4>
+              </div>
+
+              <h3>New Google Pixel 6 Pro</h3>
+
+              <button>
+                SHOP NOW <FaArrowRight />
+              </button>
+            </div>
+
             <img src="/images/pixel.png" alt="google pixel" />
-            <h4>29% OFF</h4>
           </div>
 
           <div className="hero-light">
             <img src="/images/flipbuds.png" alt="xiaomi flipbuds" />
+
             <div className="hero-light-info">
               <h3>Xiaomi FlipBuds Pro</h3>
               <h4>₹299 USD</h4>

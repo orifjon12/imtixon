@@ -3,14 +3,21 @@
 }
 
 .macbook-box {
-  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
   width: 1200px;
   margin: 0 auto;
   background-color: #fde3cf;
-  padding: 60px 50px;
+  padding: 50px;
 }
 
-.macbook-box h5 {
+.macbook-info {
+  width: 460px;
+}
+
+.macbook-info h5 {
   display: inline-block;
   background-color: #2da5f3;
   color: #ffffff;
@@ -22,14 +29,14 @@
   margin-bottom: 16px;
 }
 
-.macbook-box h2 {
+.macbook-info h2 {
   font-size: 40px;
   font-weight: 700;
   color: #191c1f;
   margin-bottom: 12px;
 }
 
-.macbook-box p {
+.macbook-info p {
   width: 300px;
   font-size: 14px;
   font-weight: 400;
@@ -38,7 +45,7 @@
   margin-bottom: 24px;
 }
 
-.macbook-box button {
+.macbook-info button {
   display: flex;
   align-items: center;
   gap: 10px;
@@ -52,20 +59,7 @@
   border-radius: 2px;
 }
 
-.macbook-box img {
-  position: absolute;
-  top: 40px;
-  right: 60px;
-  width: 400px;
-  height: 310px;
-  object-fit: contain;
-  mix-blend-mode: multiply;
-}
-
 .macbook-box h4 {
-  position: absolute;
-  top: 50px;
-  right: 430px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -76,6 +70,15 @@
   font-size: 16px;
   font-weight: 700;
   border-radius: 50%;
+  margin-bottom: 150px;
+}
+
+.macbook-box img {
+  display: block;
+  width: 400px;
+  height: 310px;
+  object-fit: contain;
+  mix-blend-mode: multiply;
 }
 
 @media (max-width: 1200px) {
@@ -89,45 +92,42 @@
 }
 
 @media (max-width: 992px) {
+  .macbook-info {
+    width: 100%;
+  }
+
   .macbook-box img {
-    right: 30px;
-    width: 260px;
-    height: 200px;
+    width: 300px;
+    height: 240px;
   }
 
   .macbook-box h4 {
-    right: 300px;
+    margin-bottom: 100px;
   }
 }
 
 @media (max-width: 768px) {
   .macbook-box {
+    flex-wrap: wrap;
     padding: 40px 24px;
-    text-align: center;
   }
 
-  .macbook-box p {
+  .macbook-info p {
     width: 100%;
-  }
-
-  .macbook-box button {
-    margin: 0 auto;
-  }
-
-  .macbook-box img {
-    position: static;
-    width: 100%;
-    height: 200px;
-    margin-top: 24px;
   }
 
   .macbook-box h4 {
     display: none;
   }
+
+  .macbook-box img {
+    width: 100%;
+    height: 200px;
+  }
 }
 
 @media (max-width: 576px) {
-  .macbook-box h2 {
+  .macbook-info h2 {
     font-size: 30px;
   }
 }
