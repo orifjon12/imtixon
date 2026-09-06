@@ -12,12 +12,6 @@ import {
   FaPhoneAlt,
   FaAngleDown,
   FaArrowRight,
-  FaFacebookF,
-  FaTwitter,
-  FaPinterestP,
-  FaRedditAlien,
-  FaYoutube,
-  FaInstagram,
 } from "react-icons/fa";
 import "./Navbar.css";
 
@@ -38,27 +32,6 @@ function Navbar() {
         </div>
       </div>
 
-      <div className="navbar-top">
-        <div className="navbar-top-box">
-          <p>Welcome to Clicon online eCommerce store.</p>
-          <nav>
-            <p>Follow us :</p>
-            <FaFacebookF />
-            <FaTwitter />
-            <FaPinterestP />
-            <FaRedditAlien />
-            <FaYoutube />
-            <FaInstagram />
-            <a>
-              Eng <FaAngleDown />
-            </a>
-            <a>
-              USD <FaAngleDown />
-            </a>
-          </nav>
-        </div>
-      </div>
-
       <div className="navbar-main">
         <div className="navbar-main-box">
           <Link to="/">
@@ -71,8 +44,12 @@ function Navbar() {
           </div>
 
           <div className="navbar-icons">
-            <FaShoppingCart />
-            <FaRegHeart />
+            <Link to="/cart">
+              <FaShoppingCart />
+            </Link>
+            <Link to="/like">
+              <FaRegHeart />
+            </Link>
             <FaRegUser />
           </div>
         </div>

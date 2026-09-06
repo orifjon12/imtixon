@@ -45,10 +45,8 @@
 
 .deals-big img {
   display: block;
-  width: 100%;
   height: 230px;
-  object-fit: contain;
-  margin-bottom: 16px;
+  margin: 0 auto 16px auto;
 }
 
 .deals-star {
@@ -97,54 +95,6 @@
   font-weight: 400;
   line-height: 20px;
   color: #5f6c72;
-  margin-bottom: 20px;
-}
-
-.deals-icons {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-
-.deals-like button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 40px;
-  height: 40px;
-  background-color: #fde3cf;
-  color: #fa8232;
-  font-size: 15px;
-  border: none;
-  border-radius: 2px;
-}
-
-.deals-cart button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  width: 152px;
-  height: 40px;
-  background-color: #fa8232;
-  color: #ffffff;
-  font-size: 12px;
-  font-weight: 700;
-  letter-spacing: 1px;
-  border: none;
-  border-radius: 2px;
-}
-
-.deals-eye a {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 40px;
-  height: 40px;
-  background-color: #fde3cf;
-  color: #fa8232;
-  font-size: 15px;
-  border-radius: 2px;
 }
 
 .deals-list {

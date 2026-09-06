@@ -1,33 +1,11 @@
-import { useState } from "react";
 import { Link } from "react-router-dom";
-import { FaStar, FaRegHeart, FaEye, FaShoppingCart, FaArrowRight } from "react-icons/fa";
+import { FaStar, FaArrowRight } from "react-icons/fa";
 import Card from "../card/Card.jsx";
 import { products } from "../../mock/data.js";
 import "./Deals.css";
 
 function Deals() {
-  const [likes, setLikes] = useState([]);
-  const [cart, setCart] = useState([]);
-
   const big = products[5];
-
-  function addLike(item) {
-    const bor = likes.find((element) => element.id === item.id);
-    if (bor) {
-      setLikes(likes.filter((element) => element.id !== item.id));
-    } else {
-      setLikes([...likes, item]);
-    }
-  }
-
-  function addCart(item) {
-    const bor = cart.find((element) => element.id === item.id);
-    if (bor) {
-      setCart(cart.filter((element) => element.id !== item.id));
-    } else {
-      setCart([...cart, item]);
-    }
-  }
 
   return (
     <div className="deals">
@@ -61,26 +39,6 @@ function Deals() {
             </h4>
 
             <p>{big.info}</p>
-
-            <div className="deals-icons">
-              <div className="deals-like">
-                <button onClick={() => addLike(big)}>
-                  <FaRegHeart />
-                </button>
-              </div>
-
-              <div className="deals-cart">
-                <button onClick={() => addCart(big)}>
-                  <FaShoppingCart /> ADD TO CARD
-                </button>
-              </div>
-
-              <div className="deals-eye">
-                <Link to={"/product/" + big.id}>
-                  <FaEye />
-                </Link>
-              </div>
-            </div>
           </div>
 
           <div className="deals-list">

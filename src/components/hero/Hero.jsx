@@ -17,8 +17,6 @@ function Hero() {
             </button>
           </div>
 
-          <h4>₹299</h4>
-
           <img src="/images/xbox.png" alt="xbox" />
         </div>
 

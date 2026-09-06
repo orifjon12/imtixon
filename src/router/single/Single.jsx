@@ -1,39 +1,17 @@
-import { useState } from "react";
 import { useParams, Link } from "react-router-dom";
 import { FaStar, FaRegHeart, FaShoppingCart, FaAngleRight } from "react-icons/fa";
 import { products } from "../../mock/data.js";
 import "./Single.css";
 
-function Single() {
+function Single({ addLike, addCart }) {
   const { id } = useParams();
-  const [likes, setLikes] = useState([]);
-  const [cart, setCart] = useState([]);
-
   const product = products.find((item) => item.id === Number(id));
-
-  function addLike(item) {
-    const bor = likes.find((element) => element.id === item.id);
-    if (bor) {
-      setLikes(likes.filter((element) => element.id !== item.id));
-    } else {
-      setLikes([...likes, item]);
-    }
-  }
-
-  function addCart(item) {
-    const bor = cart.find((element) => element.id === item.id);
-    if (bor) {
-      setCart(cart.filter((element) => element.id !== item.id));
-    } else {
-      setCart([...cart, item]);
-    }
-  }
 
   if (!product) {
     return (
       <div className="single-empty">
-        <h2>Mahsulot topilmadi</h2>
-        <Link to="/">Bosh sahifaga qaytish</Link>
+        <h2>Product not found</h2>
+        <Link to="/">Back to home</Link>
       </div>
     );
   }
@@ -84,7 +62,7 @@ function Single() {
               </div>
             </div>
 
-            <Link to="/">Bosh sahifaga qaytish</Link>
+            <Link to="/">Back to home</Link>
           </div>
         </div>
       </div>

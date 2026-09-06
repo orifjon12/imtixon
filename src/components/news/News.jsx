@@ -5,7 +5,7 @@ function News() {
   const list = [
     {
       id: 1,
-      image: "/images/promo.jpg",
+      image: "/images/7.png",
       author: "Kevin",
       date: "March 5, 2026",
       comments: "928",

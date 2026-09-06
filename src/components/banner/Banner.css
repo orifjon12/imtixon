@@ -70,8 +70,6 @@
 .banner-light img {
   display: block;
   width: 200px;
-  height: 200px;
-  object-fit: contain;
 }
 
 .banner-dark {
@@ -133,31 +131,9 @@
   border-radius: 2px;
 }
 
-.banner-dark-img {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  gap: 10px;
-}
-
-.banner-dark-img h4 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 56px;
-  height: 56px;
-  background-color: #2da5f3;
-  color: #ffffff;
-  font-size: 14px;
-  font-weight: 700;
-  border-radius: 50%;
-}
-
-.banner-dark-img img {
+.banner-dark img {
   display: block;
-  width: 210px;
-  height: 190px;
-  object-fit: contain;
+  width: 200px;
 }
 
 @media (max-width: 1200px) {
@@ -178,12 +154,10 @@
 @media (max-width: 992px) {
   .banner-light img {
     width: 150px;
-    height: 150px;
   }
 
-  .banner-dark-img img {
-    width: 150px;
-    height: 140px;
+  .banner-dark img {
+    width: 130px;
   }
 }
 

@@ -14,8 +14,6 @@ function Macbook() {
           </button>
         </div>
 
-        <h4>₹1999</h4>
-
         <img src="/images/macbook.png" alt="macbook pro" />
       </div>
     </div>

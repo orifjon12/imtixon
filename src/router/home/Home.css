@@ -76,8 +76,6 @@
 .promo img {
   display: block;
   width: 100%;
-  height: 300px;
-  object-fit: cover;
 }
 
 .products {
@@ -150,10 +148,7 @@
 
 .side-yellow img {
   display: block;
-  width: 180px;
-  height: 130px;
-  object-fit: contain;
-  mix-blend-mode: multiply;
+  width: 100%;
   margin: 0 auto 16px auto;
 }
 

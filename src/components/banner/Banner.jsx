@@ -28,10 +28,7 @@ function Banner() {
             </button>
           </div>
 
-          <div className="banner-dark-img">
-            <h4>₹590</h4>
-            <img src="/images/xiaomi.png" alt="xiaomi" />
-          </div>
+          <img src="/images/xiaomi.png" alt="xiaomi" />
         </div>
       </div>
     </div>

@@ -59,26 +59,9 @@
   border-radius: 2px;
 }
 
-.macbook-box h4 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 80px;
-  height: 80px;
-  background-color: #ffc98c;
-  color: #191c1f;
-  font-size: 16px;
-  font-weight: 700;
-  border-radius: 50%;
-  margin-bottom: 150px;
-}
-
 .macbook-box img {
   display: block;
   width: 400px;
-  height: 310px;
-  object-fit: contain;
-  mix-blend-mode: multiply;
 }
 
 @media (max-width: 1200px) {
@@ -98,12 +81,8 @@
 
   .macbook-box img {
     width: 300px;
-    height: 240px;
   }
 
-  .macbook-box h4 {
-    margin-bottom: 100px;
-  }
 }
 
 @media (max-width: 768px) {
@@ -116,13 +95,9 @@
     width: 100%;
   }
 
-  .macbook-box h4 {
-    display: none;
-  }
 
   .macbook-box img {
     width: 100%;
-    height: 200px;
   }
 }
 
