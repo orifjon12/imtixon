@@ -15,21 +15,10 @@
   margin-bottom: 20px;
 }
 
-.single-yol a {
-  font-size: 13px;
-  font-weight: 500;
-  color: #475156;
-}
-
 .single-yol p {
   font-size: 13px;
   font-weight: 500;
   color: #191c1f;
-}
-
-.single-yol svg {
-  font-size: 12px;
-  color: #77878f;
 }
 
 .single-karta {
@@ -82,12 +71,6 @@
   font-size: 18px;
   font-weight: 400;
   color: #77878f;
-}
-
-.single-info a {
-  font-size: 13px;
-  font-weight: 600;
-  color: #2da5f3;
 }
 
 .single-star {
@@ -161,12 +144,6 @@
   font-weight: 700;
   color: #191c1f;
   margin-bottom: 15px;
-}
-
-.single-empty a {
-  font-size: 14px;
-  font-weight: 600;
-  color: #2da5f3;
 }
 
 @media (max-width: 1200px) {

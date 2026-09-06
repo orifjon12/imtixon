@@ -1,13 +1,14 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
-import { FaAngleRight } from "react-icons/fa";
 import "./Cart.css";
 
-function Cart({ cart }) {
+function Cart() {
+  const [cart] = useState(JSON.parse(localStorage.getItem("cart")) || []);
+
   if (cart.length === 0) {
     return (
       <div className="cart-empty">
         <h2>Your cart is empty</h2>
-        <Link to="/">Back to home</Link>
       </div>
     );
   }
@@ -15,12 +16,6 @@ function Cart({ cart }) {
   return (
     <div className="cart">
       <div className="cart-box">
-        <div className="cart-yol">
-          <Link to="/">Home</Link>
-          <FaAngleRight />
-          <p>Shopping Cart</p>
-        </div>
-
         <h2>Shopping Cart</h2>
 
         <div className="cart-list">

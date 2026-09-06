@@ -1,17 +1,36 @@
-import { useParams, Link } from "react-router-dom";
-import { FaStar, FaRegHeart, FaShoppingCart, FaAngleRight } from "react-icons/fa";
+import { useParams } from "react-router-dom";
+import { FaStar, FaRegHeart, FaShoppingCart } from "react-icons/fa";
 import { products } from "../../mock/data.js";
 import "./Single.css";
 
-function Single({ addLike, addCart }) {
+function Single() {
   const { id } = useParams();
   const product = products.find((item) => item.id === Number(id));
+
+  function addLike() {
+    const likes = JSON.parse(localStorage.getItem("likes")) || [];
+    const bor = likes.find((item) => item.id === product.id);
+    if (bor) {
+      localStorage.setItem("likes", JSON.stringify(likes.filter((item) => item.id !== product.id)));
+    } else {
+      localStorage.setItem("likes", JSON.stringify([...likes, product]));
+    }
+  }
+
+  function addCart() {
+    const cart = JSON.parse(localStorage.getItem("cart")) || [];
+    const bor = cart.find((item) => item.id === product.id);
+    if (bor) {
+      localStorage.setItem("cart", JSON.stringify(cart.filter((item) => item.id !== product.id)));
+    } else {
+      localStorage.setItem("cart", JSON.stringify([...cart, product]));
+    }
+  }
 
   if (!product) {
     return (
       <div className="single-empty">
         <h2>Product not found</h2>
-        <Link to="/">Back to home</Link>
       </div>
     );
   }
@@ -20,8 +39,6 @@ function Single({ addLike, addCart }) {
     <div className="single">
       <div className="single-box">
         <div className="single-yol">
-          <Link to="/">Home</Link>
-          <FaAngleRight />
           <p>{product.category}</p>
         </div>
 
@@ -50,19 +67,17 @@ function Single({ addLike, addCart }) {
 
             <div className="single-icons">
               <div className="single-cart">
-                <button onClick={() => addCart(product)}>
+                <button onClick={addCart}>
                   <FaShoppingCart /> ADD TO CARD
                 </button>
               </div>
 
               <div className="single-like">
-                <button onClick={() => addLike(product)}>
+                <button onClick={addLike}>
                   <FaRegHeart /> LIKE
                 </button>
               </div>
             </div>
-
-            <Link to="/">Back to home</Link>
           </div>
         </div>
       </div>

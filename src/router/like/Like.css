@@ -8,30 +8,6 @@
   margin: 0 auto;
 }
 
-.like-yol {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  margin-bottom: 20px;
-}
-
-.like-yol a {
-  font-size: 13px;
-  font-weight: 500;
-  color: #475156;
-}
-
-.like-yol p {
-  font-size: 13px;
-  font-weight: 500;
-  color: #191c1f;
-}
-
-.like-yol svg {
-  font-size: 12px;
-  color: #77878f;
-}
-
 .like-box h2 {
   font-size: 24px;
   font-weight: 700;

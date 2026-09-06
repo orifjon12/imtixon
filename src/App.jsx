@@ -1,34 +1,21 @@
-import { useState } from "react";
+import { Routes, Route } from "react-router-dom";
 import Navbar from "./components/navbar/Navbar.jsx";
-import Router from "./router/Router.jsx";
 import Footer from "./components/footer/Footer.jsx";
+import Home from "./router/home/Home.jsx";
+import Single from "./router/single/Single.jsx";
+import Cart from "./router/cart/Cart.jsx";
+import Like from "./router/like/Like.jsx";
 
 function App() {
-  const [likes, setLikes] = useState([]);
-  const [cart, setCart] = useState([]);
-
-  function addLike(product) {
-    const bor = likes.find((item) => item.id === product.id);
-    if (bor) {
-      setLikes(likes.filter((item) => item.id !== product.id));
-    } else {
-      setLikes([...likes, product]);
-    }
-  }
-
-  function addCart(product) {
-    const bor = cart.find((item) => item.id === product.id);
-    if (bor) {
-      setCart(cart.filter((item) => item.id !== product.id));
-    } else {
-      setCart([...cart, product]);
-    }
-  }
-
   return (
     <div className="app">
       <Navbar />
-      <Router likes={likes} cart={cart} addLike={addLike} addCart={addCart} />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/product/:id" element={<Single />} />
+        <Route path="/cart" element={<Cart />} />
+        <Route path="/like" element={<Like />} />
+      </Routes>
       <Footer />
     </div>
   );
