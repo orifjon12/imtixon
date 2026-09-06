@@ -1,0 +1,292 @@
+.navbar-black {
+  background-color: #191c1f;
+  padding: 12px 0;
+}
+
+.navbar-black-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.navbar-black-name {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.navbar-black-name h4 {
+  font-size: 14px;
+  font-weight: 700;
+  color: #191c1f;
+  background-color: #f3de6d;
+  padding: 4px 10px;
+  border-radius: 2px;
+}
+
+.navbar-black-name h3 {
+  font-size: 14px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.navbar-black-box p {
+  font-size: 13px;
+  font-weight: 400;
+  color: #adb7bc;
+}
+
+.navbar-black-box button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #f3de6d;
+  color: #191c1f;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 2px;
+}
+
+.navbar-top {
+  background-color: #1b6392;
+  padding: 10px 0;
+}
+
+.navbar-top-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.navbar-top-box p {
+  font-size: 12px;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.navbar-top-box nav {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.navbar-top-box svg {
+  font-size: 13px;
+  color: #ffffff;
+}
+
+.navbar-top-box a {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+.navbar-main {
+  background-color: #2da5f3;
+  padding: 18px 0;
+}
+
+.navbar-main-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.navbar-main-box h2 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.navbar-search {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 500px;
+  background-color: #ffffff;
+  padding: 0 16px;
+  border-radius: 2px;
+}
+
+.navbar-search svg {
+  font-size: 16px;
+  color: #77878f;
+}
+
+.navbar-search input {
+  width: 100%;
+  padding: 13px 0;
+  font-size: 14px;
+  color: #191c1f;
+  border: none;
+  outline: none;
+}
+
+.navbar-icons {
+  display: flex;
+  align-items: center;
+  gap: 26px;
+}
+
+.navbar-icons svg {
+  font-size: 22px;
+  color: #ffffff;
+}
+
+.navbar-menu {
+  background-color: #ffffff;
+  border-bottom: 1px solid #e4e7e9;
+  padding: 12px 0;
+}
+
+.navbar-menu-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.navbar-menu-box button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 220px;
+  background-color: #ffffff;
+  color: #191c1f;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 12px 16px;
+  border: 1px solid #e4e7e9;
+  border-radius: 2px;
+}
+
+.navbar-menu-box nav {
+  display: flex;
+  align-items: center;
+  gap: 26px;
+}
+
+.navbar-menu-box a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  font-weight: 500;
+  color: #475156;
+}
+
+.navbar-menu-box nav svg {
+  font-size: 15px;
+  color: #475156;
+}
+
+.navbar-menu-box h4 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #191c1f;
+}
+
+@media (max-width: 1200px) {
+  .navbar-black-box,
+  .navbar-top-box,
+  .navbar-main-box,
+  .navbar-menu-box {
+    width: 100%;
+    padding: 0 15px;
+  }
+
+  .navbar-search {
+    width: 340px;
+  }
+
+  .navbar-menu-box button {
+    width: 180px;
+  }
+
+  .navbar-menu-box nav {
+    gap: 16px;
+  }
+}
+
+@media (max-width: 992px) {
+  .navbar-black-box {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .navbar-top-box {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .navbar-main-box {
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+
+  .navbar-search {
+    order: 3;
+    width: 100%;
+  }
+
+  .navbar-menu-box {
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+
+  .navbar-menu-box h4 {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar-black-box p {
+    display: none;
+  }
+
+  .navbar-top-box p {
+    display: none;
+  }
+
+  .navbar-top-box {
+    justify-content: center;
+  }
+
+  .navbar-menu-box button {
+    width: 100%;
+  }
+
+  .navbar-menu-box nav {
+    flex-wrap: wrap;
+    gap: 14px;
+  }
+}
+
+@media (max-width: 576px) {
+  .navbar-main-box h2 {
+    font-size: 20px;
+  }
+
+  .navbar-icons {
+    gap: 18px;
+  }
+}
