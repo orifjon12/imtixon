@@ -1,78 +1,60 @@
 .news {
   background-color: #f3f5f7;
-  padding: 60px 0;
+  padding: 60px 120px;
 }
-
-.news-box {
-  width: 1200px;
-  margin: 0 auto;
-}
-
-.news-box h2 {
+.news h2 {
   font-size: 28px;
   font-weight: 600;
   color: #191c1f;
   text-align: center;
-  margin-bottom: 32px;
+  padding-bottom: 32px;
 }
-
-.news-grid {
+.latest {
   display: flex;
   gap: 24px;
 }
-
-.news-grid article {
-  width: 384px;
+.latest article {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  width: 32%;
   background-color: #ffffff;
   border-radius: 2px;
   padding: 24px;
 }
-
-.news-grid img {
-  display: block;
-  width: 100%;
+.latest img {
   border-radius: 2px;
-  margin-bottom: 20px;
 }
-
-.news-grid nav {
+.latest nav {
   display: flex;
   align-items: center;
   gap: 16px;
-  margin-bottom: 12px;
 }
-
-.news-grid nav p {
+.latest nav p {
   display: flex;
   align-items: center;
   gap: 6px;
   font-size: 12px;
   font-weight: 400;
   color: #77878f;
-  margin-bottom: 0;
 }
-
-.news-grid nav svg {
+.latest nav svg {
   color: #fa8232;
 }
-
-.news-grid h3 {
+.latest h3 {
   font-size: 16px;
   font-weight: 600;
   line-height: 24px;
   color: #191c1f;
-  margin-bottom: 12px;
 }
-
-.news-grid p {
+.latest p {
   font-size: 13px;
   font-weight: 400;
   line-height: 20px;
   color: #5f6c72;
-  margin-bottom: 20px;
 }
-
-.news-grid button {
+.latest button {
   display: flex;
   align-items: center;
   gap: 10px;
@@ -85,25 +67,19 @@
   border: 1px solid #fde3cf;
   border-radius: 2px;
 }
-
 @media (max-width: 1200px) {
-  .news-box {
-    width: 100%;
-    padding: 0 15px;
-  }
-
-  .news-grid {
-    flex-wrap: wrap;
-    justify-content: center;
+  .news {
+    padding: 60px 15px;
   }
 }
-
 @media (max-width: 768px) {
   .news {
-    padding: 40px 0;
+    padding: 40px 15px;
   }
-
-  .news-grid article {
+  .latest {
+    flex-wrap: wrap;
+  }
+  .latest article {
     width: 100%;
   }
 }

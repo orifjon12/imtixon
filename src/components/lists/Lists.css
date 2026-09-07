@@ -1,26 +1,21 @@
 .lists {
-  margin-bottom: 50px;
-}
-
-.lists-box {
   display: flex;
   gap: 24px;
-  width: 1200px;
-  margin: 0 auto;
+  padding: 0 120px 50px 120px;
 }
-
-.lists-column {
-  width: 282px;
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 23%;
 }
-
-.lists-column h2 {
+.column h2 {
   font-size: 16px;
   font-weight: 700;
   color: #191c1f;
-  margin-bottom: 16px;
+  padding-bottom: 4px;
 }
-
-.lists-column article {
+.column article {
   display: flex;
   align-items: center;
   gap: 14px;
@@ -28,38 +23,42 @@
   border: 1px solid #e4e7e9;
   border-radius: 2px;
   padding: 12px;
-  margin-bottom: 12px;
 }
-
-.lists-column img {
-  width: 64px;
+.thumb {
+  width: 22%;
 }
-
-.lists-info h3 {
+.product {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  width: 72%;
+}
+.product h3 {
   font-size: 13px;
   font-weight: 400;
   line-height: 19px;
   color: #475156;
-  margin-bottom: 6px;
 }
-
-.lists-info h4 {
+.product h4 {
   font-size: 14px;
   font-weight: 600;
   color: #2da5f3;
 }
-
 @media (max-width: 1200px) {
-  .lists-box {
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 100%;
-    padding: 0 15px;
+  .lists {
+    padding: 0 15px 50px 15px;
   }
 }
-
+@media (max-width: 992px) {
+  .lists {
+    flex-wrap: wrap;
+  }
+  .column {
+    width: 47%;
+  }
+}
 @media (max-width: 768px) {
-  .lists-column {
+  .column {
     width: 100%;
   }
 }

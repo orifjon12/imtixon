@@ -1,23 +1,17 @@
-.navbar-black {
-  background-color: #191c1f;
-  padding: 12px 0;
-}
-
-.navbar-black-box {
+.black {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 1200px;
-  margin: 0 auto;
+  gap: 20px;
+  background-color: #191c1f;
+  padding: 12px 120px;
 }
-
-.navbar-black-name {
+.friday {
   display: flex;
   align-items: center;
   gap: 10px;
 }
-
-.navbar-black-name h4 {
+.friday h4 {
   font-size: 14px;
   font-weight: 700;
   color: #191c1f;
@@ -25,20 +19,17 @@
   padding: 4px 10px;
   border-radius: 2px;
 }
-
-.navbar-black-name h3 {
+.friday h3 {
   font-size: 14px;
   font-weight: 700;
   color: #ffffff;
 }
-
-.navbar-black-box p {
+.black p {
   font-size: 13px;
   font-weight: 400;
   color: #adb7bc;
 }
-
-.navbar-black-box button {
+.black button {
   display: flex;
   align-items: center;
   gap: 8px;
@@ -51,88 +42,66 @@
   border: none;
   border-radius: 2px;
 }
-
-.navbar-main {
-  background-color: #2da5f3;
-  padding: 18px 0;
-}
-
-.navbar-main-box {
+.clicon {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 30px;
-  width: 1200px;
-  margin: 0 auto;
+  background-color: #2da5f3;
+  padding: 18px 120px;
 }
-
-.navbar-main-box h2 {
+.clicon h2 {
   font-size: 24px;
   font-weight: 700;
   color: #ffffff;
 }
-
-.navbar-search {
+.search {
   display: flex;
   align-items: center;
   gap: 10px;
-  width: 500px;
+  width: 60%;
   background-color: #ffffff;
-  padding: 0 16px;
+  padding: 13px 16px;
   border-radius: 2px;
 }
-
-.navbar-search svg {
+.search svg {
   font-size: 16px;
   color: #77878f;
 }
-
-.navbar-search input {
+.search input {
   width: 100%;
-  padding: 13px 0;
   font-size: 14px;
   color: #191c1f;
   border: none;
   outline: none;
 }
-
-.navbar-icons {
+.icons {
   display: flex;
   align-items: center;
   gap: 26px;
 }
-
-.navbar-icons a {
+.icons a {
   display: flex;
   align-items: center;
   color: #ffffff;
 }
-
-.navbar-icons svg {
+.icons svg {
   font-size: 22px;
   color: #ffffff;
 }
-
-.navbar-menu {
-  background-color: #ffffff;
-  border-bottom: 1px solid #e4e7e9;
-  padding: 12px 0;
-}
-
-.navbar-menu-box {
+.menu {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 30px;
-  width: 1200px;
-  margin: 0 auto;
+  background-color: #ffffff;
+  border-bottom: 1px solid #e4e7e9;
+  padding: 12px 120px;
 }
-
-.navbar-menu-box button {
+.all {
   display: flex;
   align-items: center;
   gap: 10px;
-  width: 220px;
   background-color: #ffffff;
   color: #191c1f;
   font-size: 13px;
@@ -141,14 +110,12 @@
   border: 1px solid #e4e7e9;
   border-radius: 2px;
 }
-
-.navbar-menu-box nav {
+.menu nav {
   display: flex;
   align-items: center;
   gap: 26px;
 }
-
-.navbar-menu-box a {
+.menu a {
   display: flex;
   align-items: center;
   gap: 8px;
@@ -156,13 +123,11 @@
   font-weight: 500;
   color: #475156;
 }
-
-.navbar-menu-box nav svg {
+.menu nav svg {
   font-size: 15px;
   color: #475156;
 }
-
-.navbar-menu-box h4 {
+.phone {
   display: flex;
   align-items: center;
   gap: 8px;
@@ -170,76 +135,56 @@
   font-weight: 600;
   color: #191c1f;
 }
-
 @media (max-width: 1200px) {
-  .navbar-black-box,
-  .navbar-main-box,
-  .navbar-menu-box {
-    width: 100%;
-    padding: 0 15px;
+  .black {
+    padding: 12px 15px;
   }
-
-  .navbar-search {
-    width: 340px;
+  .clicon {
+    padding: 18px 15px;
   }
-
-  .navbar-menu-box button {
-    width: 180px;
+  .menu {
+    padding: 12px 15px;
   }
-
-  .navbar-menu-box nav {
+  .menu nav {
     gap: 16px;
   }
 }
-
 @media (max-width: 992px) {
-  .navbar-black-box {
+  .black {
     flex-wrap: wrap;
     justify-content: center;
     gap: 10px;
   }
-
-  .navbar-main-box {
+  .clicon {
     flex-wrap: wrap;
     gap: 16px;
   }
-
-  .navbar-search {
+  .search {
     order: 3;
     width: 100%;
   }
-
-  .navbar-menu-box {
+  .menu {
     flex-wrap: wrap;
     gap: 16px;
   }
-
-  .navbar-menu-box h4 {
+  .phone {
     display: none;
   }
 }
-
 @media (max-width: 768px) {
-  .navbar-black-box p {
+  .black p {
     display: none;
   }
-
-  .navbar-menu-box button {
-    width: 100%;
-  }
-
-  .navbar-menu-box nav {
+  .menu nav {
     flex-wrap: wrap;
     gap: 14px;
   }
 }
-
 @media (max-width: 576px) {
-  .navbar-main-box h2 {
+  .clicon h2 {
     font-size: 20px;
   }
-
-  .navbar-icons {
+  .icons {
     gap: 18px;
   }
 }

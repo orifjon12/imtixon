@@ -5,7 +5,6 @@ import Home from "./router/home/Home.jsx";
 import Single from "./router/single/Single.jsx";
 import Cart from "./router/cart/Cart.jsx";
 import Like from "./router/like/Like.jsx";
-
 function App() {
   return (
     <div className="app">
@@ -20,5 +19,4 @@ function App() {
     </div>
   );
 }
-
 export default App;

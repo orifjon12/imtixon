@@ -1,37 +1,27 @@
 .newsletter {
-  background-color: #1b6392;
-  padding: 72px 0;
-}
-
-.newsletter-box {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 32px;
-  width: 1200px;
-  margin: 0 auto;
+  gap: 20px;
+  background-color: #1b6392;
+  padding: 72px 120px;
 }
-
-.newsletter-box h2 {
+.newsletter h2 {
   font-size: 32px;
   font-weight: 600;
   line-height: 40px;
   color: #ffffff;
   text-align: center;
 }
-
-.newsletter-box p {
-  width: 536px;
+.newsletter p {
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
   color: #ffffff;
   text-align: center;
   opacity: 0.7;
-  margin-top: -20px;
 }
-
-.newsletter-box form {
+.newsletter form {
   display: flex;
   align-items: center;
   gap: 16px;
@@ -39,88 +29,68 @@
   padding: 12px;
   border-radius: 3px;
 }
-
-.newsletter-box input {
-  width: 424px;
-  height: 48px;
+.newsletter input {
+  width: 400px;
   font-size: 16px;
   color: #191c1f;
-  padding: 0 16px;
+  padding: 14px 16px;
   border: none;
   outline: none;
 }
-
-.newsletter-box button {
+.newsletter button {
   display: flex;
   align-items: center;
   gap: 10px;
-  height: 48px;
   background-color: #fa8232;
   color: #ffffff;
   font-size: 14px;
   font-weight: 700;
   letter-spacing: 1px;
-  padding: 0 24px;
+  padding: 15px 24px;
   border: none;
   border-radius: 2px;
 }
-
-.newsletter-box nav {
+.brands {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 40px;
-  width: 520px;
   border-top: 1px solid #ffffff;
   padding-top: 32px;
   opacity: 0.6;
 }
-
-.newsletter-box nav svg {
-  width: 100px;
-  height: 34px;
+.brands svg {
+  font-size: 34px;
   color: #ffffff;
 }
-
 @media (max-width: 1200px) {
-  .newsletter-box {
-    width: 100%;
-    padding: 0 15px;
+  .newsletter {
+    padding: 72px 15px;
   }
 }
-
 @media (max-width: 768px) {
   .newsletter {
-    padding: 50px 0;
+    padding: 50px 15px;
   }
-
-  .newsletter-box h2 {
+  .newsletter h2 {
     font-size: 24px;
     line-height: 32px;
   }
-
-  .newsletter-box p {
-    width: 100%;
-  }
-
-  .newsletter-box form {
+  .newsletter form {
     flex-direction: column;
     width: 100%;
   }
-
-  .newsletter-box input {
+  .newsletter input {
     width: 100%;
     border: 1px solid #e4e7e9;
   }
-
-  .newsletter-box button {
+  .newsletter button {
     width: 100%;
     justify-content: center;
   }
-
-  .newsletter-box nav {
-    width: 100%;
+  .brands {
     flex-wrap: wrap;
+    justify-content: center;
     gap: 24px;
   }
 }

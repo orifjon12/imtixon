@@ -1,6 +1,5 @@
 import { FaBox, FaTrophy, FaCreditCard, FaHeadphones } from "react-icons/fa";
 import "./Features.css";
-
 function Features() {
   const list = [
     { id: 1, icon: <FaBox />, title: "FASTED DELIVERY", info: "Delivery in 24/H" },
@@ -8,14 +7,13 @@ function Features() {
     { id: 3, icon: <FaCreditCard />, title: "SECURE PAYMENT", info: "Your money is safe" },
     { id: 4, icon: <FaHeadphones />, title: "SUPPORT 24/7", info: "Live contact/message" },
   ];
-
   return (
     <div className="features">
-      <div className="features-box">
+      <div className="delivery">
         {list.map((item) => (
           <article key={item.id}>
             {item.icon}
-            <div className="features-info">
+            <div className="support">
               <h4>{item.title}</h4>
               <p>{item.info}</p>
             </div>
@@ -25,5 +23,4 @@ function Features() {
     </div>
   );
 }
-
 export default Features;

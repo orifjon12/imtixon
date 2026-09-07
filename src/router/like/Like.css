@@ -1,58 +1,30 @@
 .like {
-  margin-top: 30px;
-  margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 30px 120px 50px 120px;
 }
-
-.like-box {
-  width: 1200px;
-  margin: 0 auto;
-}
-
-.like-box h2 {
+.like h2 {
   font-size: 24px;
   font-weight: 700;
   color: #191c1f;
-  margin-bottom: 20px;
 }
-
-.like-grid {
+.wishlist {
   display: flex;
   flex-wrap: wrap;
   gap: 16px;
 }
-
-.like-empty {
-  width: 1200px;
-  margin: 0 auto;
-  padding: 60px 0;
+.nolike {
+  padding: 60px 15px;
   text-align: center;
 }
-
-.like-empty h2 {
+.nolike h2 {
   font-size: 22px;
   font-weight: 700;
   color: #191c1f;
-  margin-bottom: 15px;
 }
-
-.like-empty a {
-  font-size: 14px;
-  font-weight: 600;
-  color: #2da5f3;
-}
-
 @media (max-width: 1200px) {
-  .like-box {
-    width: 100%;
-    padding: 0 15px;
-  }
-
-  .like-grid {
-    justify-content: center;
-  }
-
-  .like-empty {
-    width: 100%;
-    padding: 60px 15px;
+  .like {
+    padding: 30px 15px 50px 15px;
   }
 }

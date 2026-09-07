@@ -6,7 +6,7 @@ export const products = [
     price: 70,
     oldPrice: 0,
     reviews: 738,
-    image: "/images/1.png",
+    image: "/1.png",
     info: "TOZO T6 True Wireless Earbuds Bluetooth 5.3 quloqchin, IPX8 suvdan himoya va 6 soatlik ishlash vaqti.",
   },
   {
@@ -16,7 +16,7 @@ export const products = [
     price: 2300,
     oldPrice: 0,
     reviews: 536,
-    image: "/images/2.png",
+    image: "/2.png",
     info: "Samsung Galaxy S21 5G, 6.2 dyuym Dynamic AMOLED ekran, 128GB xotira va 64MP kamera.",
   },
   {
@@ -26,7 +26,7 @@ export const products = [
     price: 360,
     oldPrice: 0,
     reviews: 423,
-    image: "/images/3.png",
+    image: "/3.png",
     info: "Amazon Basics HDMI kabeli, 18 Gbps tezlik, 4K/60Hz va 3D video qollab-quvvatlaydi.",
   },
   {
@@ -36,7 +36,7 @@ export const products = [
     price: 80,
     oldPrice: 0,
     reviews: 215,
-    image: "/images/4.png",
+    image: "/4.png",
     info: "Portativ kir yuvish mashinasi, 11 lbs sigim, kichik xonadonlar uchun qulay.",
   },
   {
@@ -46,7 +46,7 @@ export const products = [
     price: 1500,
     oldPrice: 0,
     reviews: 647,
-    image: "/images/5.png",
+    image: "/5.png",
     info: "USB simli geymer quloqchini, 7.1 surround ovoz va mikrofon bilan.",
   },
   {
@@ -56,7 +56,7 @@ export const products = [
     price: 1200,
     oldPrice: 1600,
     reviews: 677,
-    image: "/images/6.png",
+    image: "/6.png",
     info: "Polaroid 57 dyuymli foto va video tripod, ozi bilan qulay sumka beriladi.",
   },
   {
@@ -66,7 +66,7 @@ export const products = [
     price: 250,
     oldPrice: 0,
     reviews: 416,
-    image: "/images/7.png",
+    image: "/7.png",
     info: "Dell Optiplex All-in-One kompyuter monitori, Full HD ekran va ichki dinamiklar.",
   },
   {
@@ -76,7 +76,7 @@ export const products = [
     price: 220,
     oldPrice: 0,
     reviews: 568,
-    image: "/images/8.png",
+    image: "/8.png",
     info: "4K UHD LED Smart TV, ichida Chromecast bor, ovozli boshqaruv qollab-quvvatlanadi.",
   },
 ];

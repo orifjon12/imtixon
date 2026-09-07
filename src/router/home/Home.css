@@ -1,44 +1,35 @@
 .featured {
-  margin-bottom: 40px;
-}
-
-.featured-box {
   display: flex;
   align-items: flex-start;
   gap: 24px;
-  width: 1200px;
-  margin: 0 auto;
+  padding: 0 120px 40px 120px;
 }
-
-.promo {
-  width: 276px;
+.discount {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 23%;
   background-color: #f3de6d;
-  padding: 24px 0 0 0;
+  padding-top: 24px;
   text-align: center;
 }
-
-.promo h5 {
+.discount h5 {
   font-size: 11px;
   font-weight: 600;
-  color: #c94d1b;
   letter-spacing: 1px;
-  margin-bottom: 12px;
+  color: #c94d1b;
 }
-
-.promo h2 {
+.discount h2 {
   font-size: 30px;
   font-weight: 700;
   color: #191c1f;
-  margin-bottom: 8px;
 }
-
-.promo p {
+.discount p {
   font-size: 13px;
+  font-weight: 400;
   color: #475156;
-  margin-bottom: 20px;
 }
-
-.promo h4 {
+.discount h4 {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -46,129 +37,100 @@
   font-size: 11px;
   font-weight: 500;
   color: #191c1f;
-  margin-bottom: 20px;
 }
-
-.promo h4 b {
+.discount h4 b {
   font-size: 11px;
   font-weight: 600;
   background-color: #ffffff;
   padding: 7px 10px;
 }
-
-.promo button {
+.discount button {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 10px;
-  width: 170px;
-  margin: 0 auto 24px auto;
+  align-self: center;
   background-color: #fa8232;
   color: #ffffff;
   font-size: 12px;
   font-weight: 700;
   letter-spacing: 1px;
-  padding: 13px 0;
+  padding: 13px 30px;
   border: none;
   border-radius: 2px;
 }
-
-.promo img {
-  display: block;
-  width: 100%;
-}
-
 .products {
-  width: 900px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 74%;
 }
-
-.products-top {
+.browse {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 16px;
   border-bottom: 1px solid #e4e7e9;
   padding-bottom: 14px;
-  margin-bottom: 20px;
 }
-
-.products-top h2 {
+.browse h2 {
   font-size: 20px;
   font-weight: 700;
   color: #191c1f;
 }
-
-.products-top nav {
+.browse nav {
   display: flex;
   align-items: center;
   gap: 22px;
 }
-
-.products-top nav a {
+.browse nav a {
   font-size: 13px;
   font-weight: 500;
   color: #77878f;
 }
-
-.products-top nav h4 {
+.browse nav h4 {
   font-size: 13px;
   font-weight: 600;
   color: #fa8232;
 }
-
-.products-grid {
+.cards {
   display: flex;
   flex-wrap: wrap;
   gap: 16px;
 }
-
 .accessories {
-  margin-bottom: 50px;
-}
-
-.accessories-box {
   display: flex;
   align-items: flex-start;
   gap: 24px;
-  width: 1200px;
-  margin: 0 auto;
+  padding: 0 120px 50px 120px;
 }
-
-.side {
+.banners {
   display: flex;
   flex-direction: column;
   gap: 24px;
-  width: 276px;
+  width: 23%;
 }
-
-.side-yellow {
+.earbuds {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
   background-color: #f3de6d;
   padding: 24px 20px;
   text-align: center;
 }
-
-.side-yellow img {
-  display: block;
-  width: 100%;
-  margin: 0 auto 16px auto;
-}
-
-.side-yellow h3 {
+.earbuds h3 {
   font-size: 20px;
   font-weight: 700;
   line-height: 28px;
   color: #191c1f;
-  margin-bottom: 10px;
 }
-
-.side-yellow p {
+.earbuds p {
   font-size: 12px;
   font-weight: 400;
   line-height: 19px;
   color: #475156;
-  margin-bottom: 16px;
 }
-
-.side-yellow h4 {
+.earbuds h4 {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -176,22 +138,18 @@
   font-size: 11px;
   font-weight: 500;
   color: #191c1f;
-  margin-bottom: 18px;
 }
-
-.side-yellow h4 b {
+.earbuds h4 b {
   font-size: 12px;
   font-weight: 600;
   background-color: #ffffff;
   padding: 7px 12px;
 }
-
-.side-yellow button {
+.earbuds button {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 10px;
-  width: 100%;
   background-color: #fa8232;
   color: #ffffff;
   font-size: 11px;
@@ -201,16 +159,17 @@
   border: none;
   border-radius: 2px;
 }
-
-.side-blue {
+.sales {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
   background-color: #114261;
   color: #ffffff;
   padding: 24px 20px;
   text-align: center;
 }
-
-.side-blue h5 {
-  display: inline-block;
+.sales h5 {
+  align-self: center;
   background-color: #33587a;
   color: #ffffff;
   font-size: 10px;
@@ -218,33 +177,25 @@
   letter-spacing: 0.5px;
   padding: 5px 10px;
   border-radius: 2px;
-  margin-bottom: 14px;
 }
-
-.side-blue h3 {
+.sales h3 {
   font-size: 24px;
   font-weight: 700;
-  margin-bottom: 10px;
 }
-
-.side-blue p {
+.sales p {
   font-size: 12px;
   font-weight: 400;
   color: #ffffff;
-  margin-bottom: 18px;
 }
-
-.side-blue p b {
+.sales p b {
   color: #f3de6d;
   font-weight: 600;
 }
-
-.side-blue button {
+.sales button {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 10px;
-  width: 100%;
   background-color: #2da5f3;
   color: #ffffff;
   font-size: 11px;
@@ -254,74 +205,48 @@
   border: none;
   border-radius: 2px;
 }
-
 @media (max-width: 1200px) {
-  .featured-box {
-    width: 100%;
-    padding: 0 15px;
+  .featured {
+    padding: 0 15px 40px 15px;
   }
-
-  .accessories-box {
-    width: 100%;
-    padding: 0 15px;
+  .accessories {
+    padding: 0 15px 50px 15px;
   }
-
+}
+@media (max-width: 992px) {
+  .featured {
+    flex-direction: column;
+  }
+  .accessories {
+    flex-direction: column;
+  }
+  .discount {
+    width: 100%;
+  }
   .products {
     width: 100%;
   }
-
-  .products-grid {
-    justify-content: center;
-  }
-}
-
-@media (max-width: 992px) {
-  .featured-box {
-    flex-direction: column;
-  }
-
-  .accessories-box {
-    flex-direction: column;
-  }
-
-  .promo {
-    width: 100%;
-  }
-
-  .side {
+  .banners {
     flex-direction: row;
     width: 100%;
   }
-
-  .side-yellow {
-    width: 50%;
+  .earbuds {
+    width: 49%;
   }
-
-  .side-blue {
-    width: 50%;
+  .sales {
+    width: 49%;
   }
-
-  .products-top {
+  .browse {
     flex-wrap: wrap;
     gap: 12px;
   }
-
-  .products-top nav {
+  .browse nav {
     flex-wrap: wrap;
     gap: 14px;
   }
 }
-
 @media (max-width: 768px) {
-  .side {
+  .banners {
     flex-direction: column;
-  }
-
-  .side-yellow {
-    width: 100%;
-  }
-
-  .side-blue {
-    width: 100%;
   }
 }

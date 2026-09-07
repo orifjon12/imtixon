@@ -1,11 +1,10 @@
 import { FaRegUser, FaRegCalendarAlt, FaRegComments, FaArrowRight } from "react-icons/fa";
 import "./News.css";
-
 function News() {
   const list = [
     {
       id: 1,
-      image: "/images/7.png",
+      image: "/7.png",
       author: "Kevin",
       date: "March 5, 2026",
       comments: "928",
@@ -14,7 +13,7 @@ function News() {
     },
     {
       id: 2,
-      image: "/images/6.png",
+      image: "/6.png",
       author: "Kevin",
       date: "March 5, 2026",
       comments: "1,024",
@@ -23,7 +22,7 @@ function News() {
     },
     {
       id: 3,
-      image: "/images/1.png",
+      image: "/1.png",
       author: "Kevin",
       date: "March 5, 2026",
       comments: "618",
@@ -31,38 +30,33 @@ function News() {
       info: "Integer congue lorem in nibh porta, nec fermentum lacus tincidunt. Sed vitae eros a ligula tempor.",
     },
   ];
-
   return (
     <div className="news">
-      <div className="news-box">
-        <h2>Latest News</h2>
-
-        <div className="news-grid">
-          {list.map((item) => (
-            <article key={item.id}>
-              <img src={item.image} alt={item.title} />
-              <nav>
-                <p>
-                  <FaRegUser /> {item.author}
-                </p>
-                <p>
-                  <FaRegCalendarAlt /> {item.date}
-                </p>
-                <p>
-                  <FaRegComments /> {item.comments}
-                </p>
-              </nav>
-              <h3>{item.title}</h3>
-              <p>{item.info}</p>
-              <button>
-                READ MORE <FaArrowRight />
-              </button>
-            </article>
-          ))}
-        </div>
+      <h2>Latest News</h2>
+      <div className="latest">
+        {list.map((item) => (
+          <article key={item.id}>
+            <img src={item.image} alt={item.title} />
+            <nav>
+              <p>
+                <FaRegUser /> {item.author}
+              </p>
+              <p>
+                <FaRegCalendarAlt /> {item.date}
+              </p>
+              <p>
+                <FaRegComments /> {item.comments}
+              </p>
+            </nav>
+            <h3>{item.title}</h3>
+            <p>{item.info}</p>
+            <button>
+              READ MORE <FaArrowRight />
+            </button>
+          </article>
+        ))}
       </div>
     </div>
   );
 }
-
 export default News;
